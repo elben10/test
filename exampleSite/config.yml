@@ -1,0 +1,14 @@
+baseURL: "http://www.example.com"
+theme: "hugopersonal"
+
+menu:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 1
+    - name: "Home2"
+      url: "/test/"
+      weight: 2
+
+params:
+  widgets: 4

@@ -1,0 +1,32 @@
+#mainNav {
+    width: $nav-width;
+    height: 100vh;
+    flex-direction: column;
+    flex-grow: 0;
+    display: flex;
+    justify-content: center;
+    .navbar-brand {
+        margin: 0 auto 0 auto;
+        .img-profile {
+            max-width: 12rem;
+            max-height: 12rem;
+            border: 0.5rem solid fade-out($white, 0.8);
+        }
+    }
+    #navbarContent{
+        padding-top: 1rem;
+        display: block!important;
+        flex-grow: 0;
+        width: 100%;
+        .navbar-nav {
+            flex-direction: column;
+            .nav-item {
+                margin: 0 auto 0 auto;
+                flex-direction: column;
+            }
+        }
+    }
+    a {
+        color: #ffffff;
+    }
+}

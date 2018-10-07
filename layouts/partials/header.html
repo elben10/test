@@ -1,0 +1,32 @@
+{{$page_url := .URL}}
+<html>
+<header>
+    <noscript>
+        <style>
+          body {
+            opacity: 1;
+          }
+        </style>
+    </noscript>
+  <link rel="stylesheet" type="text/css" href={{ "/css/main.css"  | relURL }}>
+</header>
+
+
+<body class="load-hide" data-spy="scroll" data-target="#Nav">
+  <nav id="mainNav" class="navbar navbar-expand-lg bg-primary fixed-top">
+    <a class="navbar-brand" href="/">
+      <span class="d-none d-lg-block">
+        <img class="img-profile rounded-circle" src={{ "images/profile.jpg" | relURL}}
+          alt="">
+      </span>
+    </a>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav">
+        {{ range .Site.Menus.main }}
+        <li class="nav-item">
+          <a class="nav-link{{ if eq .URL $page_url }} active{{ end }}" href="{{ .URL }}">{{.Name}}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </nav>

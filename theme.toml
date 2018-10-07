@@ -1,0 +1,8 @@
+name = "hugopersonal"
+license = "MIT"
+license_link = "https://github.com/elben10/hugopersonal/blob/master/LICENS"
+description = "Personal theme for Hugo"
+homepage = "hugopersonal.netlify.com"
+
+[author]
+  name = "Jakob Jul Elben"
